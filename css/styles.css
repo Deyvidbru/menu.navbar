@@ -8,12 +8,9 @@
     text-decoration: none;
   }
   
-  .header {
-    background: #a5c;
-    padding-inline: 16px;
-  }
-  
   .nav {
+    background: #fff;
+    padding-inline: 16px;
     max-width: 1280px;
     height: 70px;
     margin-inline: auto;
@@ -35,20 +32,21 @@
   
   .nav-list a {
     font-size: 18px;
-    color: #fff;
+    /*color: #fff;*/
+    color: black;
     padding-block: 16px;
   }
   
-  .hero {
+  /*.hero {
     height: calc(100vh - 70px);
     background: center / cover no-repeat url("../img/bg.jpg");
-  }
+  }*/
   
   .hamburger {
     display: none;
     border: none;
     background: none;
-    border-top: 3px solid #fff;
+    border-top: 3px solid black /*#fff*/;
     cursor: pointer;
   }
   
@@ -58,7 +56,8 @@
     display: block;
     width: 30px;
     height: 3px;
-    background: #fff;
+    background: black;
+    /*background: #fff;*/
     margin-top: 5px;
     position: relative;
     transition: 0.3s;
@@ -76,7 +75,8 @@
       left: 0;
       width: 100vw;
       height: 100vh;
-      background: #a5c;
+      /*background: #a5c;*/
+      background: white;
       clip-path: circle(100px at 90% -15%);
       transition: 1s ease-out;
   
@@ -131,4 +131,11 @@
       transform: rotate(-135deg);
       top: -7px;
     }
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, white 70px, black, white);
   }
